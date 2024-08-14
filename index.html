@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logoalura.png" type="favicon">
+    <script src="index.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <section class="leftItens">
+            <img src="assets/logoalura.png" alt="logotipo">
+            <div class="textLocal">
+                <input type="text" id="digiteTexto" placeholder="Digite seu texto...">
+            </div>
+            <div class="boxButton">
+                <div>
+                    <p id="textoVetor" class="alertVetor"><span id="iconeVetor" class="vetor">!</span>Apenas letras
+                        minúsculas sem acento.</p>
+
+                    <button type="submit" onclick="criptografar()" id="btn_criptografar"
+                        class="buttonCriptografar">Criptografar</button>
+
+                    <button type="submit" onclick="descriptografar()"
+                        class="buttonDescriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <div>
+            <div id="area" class="boxArea">
+                <div id="areaDecodificacao" class="localTexto">
+                    <img src="assets/imagem projeto.png" alt="lupa">
+                    <p>Mensagem não encontrada.</p>
+
+                </div>
+                <div id="secondArea"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="rodape">
+        &copy; Desenvolvido por Marcela Moraes | 2024.
+    </footer>
+</body>
+
+</html>
